@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+      </style>
+    <title>Web page design using table</title>
+    <style>
+        .nav tr {
+            display: inline;
+            padding: 0px;
+            margin: 0px;
+            float: right;
+            
+            }
+            td a{
+                padding: 5px 10px;
+                text-decoration: none;
+                color: #000;
+                padding-right: 50px;
+                font-family: Roboto;
+                font-size: 20px;
+                
+            }
+            td a:hover{
+                background-color: black;
+                color: white;
+            }
+           .catagories{
+            padding-bottom: 600px;
+           }
+           #subcat{
+            font-size: 25px;
+            font-family: roboto;
+            background-color: rgb(242, 181, 60);
+           }
+           .search-bar input{
+            padding: 13px;
+            width: 80%;
+            margin: 0 10px;
+           }
+
+
+    </style>
+</head>
+<body>
+   <table border="1" width="100%" cellspacing="12">
+    <thead>
+        <tr>
+            <th style="height: 80px; width: 100px;" ><img src="img/logo/logo.png" alt="logo" width="80px" height="60px"></th>
+            <th class="search-bar"><input type="text" placeholder="Search Items..."></th>
+            <th style="width: 100px;"><img src="img/logo/icon.png" alt="" width="100px"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="3">
+                <table class="nav" border="0" width="100%">
+                    <tr>
+                        <td><a href="">Home</a></td>
+                        <td><a href="">About Us</a></td>
+                        <td><a href="">Products</a></td>
+                        <td><a href="">Register</a></td>
+                        <td><a href="">LogIn</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                <table>
+                    <tr>
+                        <th>
+                            <div class="catagories">
+                                <select name="" id="subcat">
+                                    <option value="">Catagories</option>
+                                    <option value="">Clothes</option>
+                                    <option value="">Desktop</option>
+                                    <option value="">Laptop</option>
+                                    <option value="">Mobile</option>
+                                    <option value="">Networking</option>
+                                    <option value="">Camera</option>
+                                </select>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </td>
+            <td style="height: 450px;"><img src="img/banner/b17.jpg" alt="banner" width="100%" height="100%"></td>
+            <td rowspan="2">Right Bar</td>
+        </tr>
+        <tr>
+            <th style="height: 150px;">
+            <div>
+                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                <img src="" alt="">
+            </div>
+            </th>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" style="height: 40px;">Footer</td>
+        </tr>
+    </tfoot>
+   </table> 
+</body>
+</html>
